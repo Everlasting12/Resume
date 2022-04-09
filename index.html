@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./resume.css">
+
+</head>
+
+<body>
+    <!--
+    <div class="container resumeGenerator">
+        <div class="col1">
+            <h3>Personal Information</h3>
+            <div class="PersonalInformation">
+                <label for="nameField">Your Name:</label>
+                <input type="text" name="nameField" id="nameField" placeholder="Enter your name:">
+
+                <label for="positionField">Your Position:</label>
+                <input type="text" name="positionField" id="positionField" placeholder="Enter your designation">
+
+                <label for="addressField">Your address:</label>
+                <input type="text" name="addressField" id="addressField" placeholder="Enter your address">
+
+                <label for="emailField">Your email:</label>
+                <input type="email" name="emailField" id="emailField" placeholder="Enter your email">
+
+                <label for="phoneField">Your phone:</label>
+                <input type="text" name="phoneField" id="phoneField" placeholder="Enter your contact">
+
+                <label for="webField">Your website:</label>
+                <input type="text" name="webField" id="webField" placeholder="Enter your website">
+
+            </div>
+
+            <h3>Social Link </h3>
+            <div class="socialLink">
+                <label for="instaField">Your instagram:</label>
+                <div>
+                    <input type="text" placeholder="Instagram Username" name="instaField" id="instaHandleField"> <br>
+                    <input type="text" name="instaField" id="instaField" placeholder="Instagram link">
+                </div>
+
+                <label for="twitterField">Your twitter:</label>
+                <div>
+                    <input type="text" name="twitterField" id="twitterHandleField" placeholder="Twitter Username"> <br>
+                    <input type="text" name="twitterField" id="twitterField" placeholder="Twitter Link">
+                </div>
+
+                <label for="gitField">Your git:</label>
+                <div>
+                    <input type="text" name="gitField" id="gitField" placeholder="Your git profile link">
+                </div>
+
+            </div>
+            <h3>Objective</h3>
+            <div class="objectiveInformation">
+
+                <label for="objectiveField">Your Objective</label>
+                <textarea name="objectiveField" id="objectiveField" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="col2">
+            <h3>Skills</h3>
+            <div class="skillsGenerator">
+
+                <div class="professional" id="professional">
+                    <h4>Professional Skills</h4>
+                    <input type="text" name="skills" id="skills" class="proSkillInput"><br>
+
+                    <button onclick="addProSkill()" id="addProSkill" class="btnEdit">+</button>
+            
+    </div>
+
+
+
+
+    <div class="personal" id="personal">
+        <h4>Personal Skills</h4>
+        <input type="text" name="skills" id="skills" class="perSkillInput"><br>
+        <button onclick="addPerSkill()" id="addPerSkill" class="btnEdit">+</button>
+        
+    </div>
+    </div>
+    <br>
+    <h3>Education</h3>
+    <div class="educationGenerator">
+        <label for="educationField">Your Education</label>
+        <input type="text" name="durationField" id="durationField" placeholder="2010-2013">
+        <input type="text" name="degreeNameField" id="degreeNameField" placeholder="Academic Degree/Major">
+        <input type="text" name="universityNameField" id="universityNameField" placeholder="University Name">
+        <textarea name="educationField" id="educationField" cols="30" rows="10"
+            placeholder="describe experience about your academic year"></textarea>
+        <input type="text" name="cgpaField" id="cgpaField" placeholder="CGPA">
+        <button onclick="addEducation()" id="addEducation" class="btnEdit">+</button>
+    </div>
+
+
+    </div>
+
+
+    </div>
+
+    <button onclick="GenerateCV()" id="GenerateCV">Generate CV</button>
+    </div>
+    -->
+
+    <section class="resume">
+        <section class="column">
+
+            <section class="profile">
+                <h1 id="nameT">Sidhesh Parab</h1>
+                <p><em id="positionT">Web Developer</em></p>
+                <!-- <img src="./Sid.jpg" alt=""> -->
+                <hr>
+            </section>
+
+            <section class="objective">
+                <p id="objectiveT">
+                    Interested in a role of Web Developer where company will help me to contribute
+                    to its development while concurrently aiding my personal growth.
+                    Wish to work with the talented and diverse team that works towards contributing to the
+                    company's goals and vision.
+                </p>
+
+            </section>
+
+            <section class="contact">
+                <h2>Contact</h2>
+                <ul>
+
+
+                    <li>
+                        <i class=" fa fa-home"></i>
+                        <p id="addressT"> 4 Privet Drive, Little Whinging, Surrey
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a id="emailT" href="mailto:" target="_blank">example@gmail.com</a>
+                    </li>
+                    <!-- <li>
+                        <i class="fa fa-address-card"></i>
+                        <a id="webT" href="www.sidhesh-parab.com" target="_blank">www.sidheshparab.com</a>
+                    </li> -->
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <a id="phoneT" href="tel:" target="_blank"></a>
+                    </li>
+                </ul>
+            </section>
+
+
+
+
+            <section class="socials">
+                <ul>
+                    <!-- <li><img src="./insta32.png" />
+                        <a id="instaT" href="https://www.instagram.com/sidheshparab34/"
+                            target="_blank">sidheshparab34</a>
+                    </li> -->
+                    <li><img src="./github32.png" />
+                        <a id="gitT" href="https://github.com/Everlasting12" target="_blank">Everlasting12</a>
+                    </li>
+                    <!-- <li><img src="./twitter32.png" />
+                        <a id="twitterT" href="https://twitter.com/parab_sidhesh" target="_blank">@parab_sidhesh</a>
+                    </li> -->
+                    <li><img src="./linkedin32.png" />
+                        <a id="twitterT" href="https://www.linkedin.com/in/sidhesh-parab-5632561b9/"
+                            target="_blank">Sidhesh Parab</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h2>Capabilities/Skills</h2>
+                <ul>
+                    <li>
+                        <h3>Professional</h3>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>Java</li>
+                            <li>Django</li>
+                            <li>React JS, ReactNative</li>
+                            <li>MySQL</li>
+                            <li>Boostrap</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Personal</h3>
+                        <ul>
+                            <li>Creative Spirit</li>
+                            <li>Team Player</li>
+                            <li>Fast Learner</li>
+                            <li>Open to challeges</li>
+                            <li>Willing to learn</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </section>
+            <br>
+            <br>
+            <br>
+
+            <div class="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Drawing and Sketching</li>
+                    <li>Reading</li>
+                    <li>Playing Video Games</li>
+                </ul>
+
+                <br>
+
+            </div>
+
+        </section>
+        <section class="column">
+
+            <section class="education">
+                <h2>Education</h2>
+                <ul class="timeline">
+                    <li class="event">
+                        <span class="duration">2018 - 2021</span>
+                        <div class="content">
+                            <span></span>
+                            <h3>Bachelor of Science in Information Technology</h3>
+                            <p><em>Mumbai University</em></p>
+                            <p>Contributed in many Inter-Intra college
+                                events like Ignite and Tech-Talks.
+                                Gained valuable experience in Event Management and Creative Designing from peers.
+                            </p>
+                            <small>CGPA : 9.23</small>
+                            <span></span>
+                        </div>
+
+                    </li>
+
+                    <li class="event">
+                        <span class="duration">2016 - 2018</span>
+                        <div class="content">
+                            <span></span>
+                            <h3>Higher Secondary Certificate</h3>
+                            <p><em>Maharashtra State Board</em></p>
+                            <p></p>
+                            <small>Percentage : 81.69%</small>
+                            <span></span>
+                        </div>
+
+                    </li>
+
+                    <li class="event">
+                        <span class="duration">2015 - 2016</span>
+                        <div class="content">
+                            <span></span>
+                            <h3>Secondary School Certificate</h3>
+                            <p> <em>Maharashtra State Board</em> </p>
+                            <p></p>
+                            <small>Percentage : 93.00%</small>
+                            <span></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+
+                <ul class="timeline">
+                    <li class="event">
+                        <span class="duration">2021-2022</span>
+                        <div class="content">
+                            <span></span>
+                            <h3>Engineer.InternetIT.Support</h3>
+                            <p><em>Tata Consultancy Services, Mumbai</em></p>
+                            <p> • Selected for TCS Ignite project, gained valuable experience from peers and trainers.
+                                <br>
+                                • Got to learn Blender, Adobe XD softwares. <br>
+                                • Worked as a Security Operation L1 Support Engineer for 5 months and handled Users
+                                upfront.
+                            </p>
+                            <span></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+
+            <section class="experience">
+                <h2>Final Year Project</h2>
+
+                <ul class="timeline">
+                    <li class="event">
+                        <span class="duration">2020-2021</span>
+                        <div class="content">
+                            <span></span>
+                            <h3>Python Network Automation Script</h3>
+                            <p><em>Python and Django Framework</em></p>
+                            <p>Python Network Automation Scripts is an Open Source web application that is
+                                intended to provide local Networks Information and Network Security to users. This is
+                                done
+                                by running various Python Scripts.</p>
+                            <span></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+        </section>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
