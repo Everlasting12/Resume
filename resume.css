@@ -1,171 +1,190 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  color:#222;
+
+html {
+  color: #222;
   line-height: 1.5;
 }
-body{
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 4rem 5rem;
-  background: linear-gradient(rgb(255, 243, 195),  rgb(255, 188, 180) );
-  
- 
+
+body {
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-size: smaller;
+  padding: 50px 0px;
+  background: linear-gradient(rgb(255, 243, 195), rgb(255, 188, 180));
+
 }
-h1{
+
+h1 {
   font-size: 2rem;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
-h2{
+
+h2 {
   font-size: 1.1rem;
-  text-transform:uppercase;
+  text-transform: uppercase;
   border-top: 1px solid #888;
   border-bottom: 1px solid #888;
   padding: 0.75rem 0;
   margin-bottom: 2rem;
-  color:rgb(0, 108, 162);
-  
+  color: rgb(0, 108, 162);
+
 }
-h3{
+
+h3 {
   font-size: 1rem;
-  text-transform:uppercase;
+  text-transform: uppercase;
   /* color:rgb(0, 0, 0); */
-  
- 
+
+
 }
-p{
+
+p {
   line-height: 1.5;
 }
 
-section + section{
+section+section {
   margin-top: 2rem;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
-  text-transform:lowercase;
-}
-ul{
-  list-style:none;
+  text-transform: lowercase;
 }
 
-.resume{
+ul {
+  list-style: none;
+}
+
+.resume {
   display: grid;
   max-width: 1000px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
- 
+
   padding: 2rem 3rem;
   margin: 0 auto;
-  height:100%;
-  
-  
+  height: 100%;
+
+
   background: rgb(255, 255, 255);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur( 2px );
-  -webkit-backdrop-filter: blur( 2px );
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
-  
+
 }
 
-.profile{
-  padding:1rem;
+.profile {
+  padding: 1rem;
   text-align: center;
 }
-.profile img{
-  border-radius:50%;
+
+.profile img {
+  border-radius: 50%;
   width: 10rem;
   height: 10rem;
 }
-.profile p{
+
+.profile p {
   margin-bottom: 1rem;
-  color:#888;
-  font-size: 1.25rem; 
+  color: #888;
+  font-size: 1.25rem;
 }
-.contact ul{
-  margin-top:-2rem;
+
+.contact ul {
+  margin-top: -2rem;
 }
-.contact li{
+
+.contact li {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
   padding: 1rem;
   border-bottom: 1px solid #888;
-  color:rgb(54, 54, 54);
+  color: rgb(54, 54, 54);
   font-size: 0.9rem;
 }
-.contact li i{
+
+.contact li i {
   font-size: 1rem;
   margin-right: 10px;
   padding-right: 1rem;
   border-right: 1px solid #888;
 }
-.objective p{
+
+.objective p {
   margin-top: 20px;
   text-align: justify;
 }
 
-.skills > ul{
+.skills>ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap:1rem;
+  grid-gap: 1rem;
 }
 
-.socials li{
+.socials li {
   display: grid;
   grid-template-columns: 8ch 1fr;
   margin-bottom: 0.5rem;
   align-items: center;
   align-content: center;
-  
+
 }
 
-.event{
+.event {
   display: grid;
   grid-template-columns: 5ch auto;
   margin-bottom: 1rem;
-  
+
 }
-.content{
+
+.content {
   position: relative;
   padding-left: 1rem;
   margin-left: 1rem;
   border-left: 1px solid grey;
   text-align: justify;
 }
-.content > span:first-child{
+
+.content>span:first-child {
   position: absolute;
   top: 0px;
-  left:-6px;
+  left: -6px;
   height: 10px;
   width: 10px;
   background-color: rgb(94, 94, 94);
   border-radius: 50%;
 }
-.content > span:last-child{
+
+.content>span:last-child {
   position: absolute;
   bottom: 0px;
-  left:-6px;
+  left: -6px;
   height: 10px;
   width: 10px;
   background-color: rgb(94, 94, 94);
   border-radius: 50%;
 }
-.content p{
-margin-bottom: 1rem;
+
+.content p {
+  margin-bottom: 1rem;
 }
-.content small{
+
+.content small {
   font-size: 0.85rem;
-  color:#333;
-} 
+  color: #333;
+}
 
 
 
@@ -184,29 +203,36 @@ margin-bottom: 1rem;
 
 /* Resume Generator */
 
-.resumeGenerator, .skillsGenerator{
-  display: grid; 
+.resumeGenerator,
+.skillsGenerator {
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.PersonalInformation{
-  padding:20px 40px;
-  display: grid; 
+.PersonalInformation {
+  padding: 20px 40px;
+  display: grid;
   grid-template-columns: 1fr 2fr;
-}
-.PersonalInformation input, .PersonalInformation label{
-margin-top: 15px;
 }
 
-.socialLink , .objectiveInformation{
-  padding:20px 40px;
-  display: grid; 
+.PersonalInformation input,
+.PersonalInformation label {
+  margin-top: 15px;
+}
+
+.socialLink,
+.objectiveInformation {
+  padding: 20px 40px;
+  display: grid;
   grid-template-columns: 1fr 2fr;
 }
-label{
+
+label {
   font-size: 20px;
 }
-input, textarea{
+
+input,
+textarea {
   font-size: 20px;
   height: 35px;
   padding: 20px 20px;
@@ -216,16 +242,18 @@ input, textarea{
   border: none;
   background-color: rgb(230, 230, 230);
 }
-.PersonalInformation input{
+
+.PersonalInformation input {
   max-width: 300px;
 }
-textarea{
+
+textarea {
   max-width: max-content;
   height: 100px;
 }
 
 
-#GenerateCV{
+#GenerateCV {
   width: 200px;
   height: 50px;
   border: none;
@@ -234,8 +262,8 @@ textarea{
   font-size: 20px;
 }
 
-.btnEdit{
- 
+.btnEdit {
+
   margin: 0px auto;
   width: 40px;
   height: 40px;
@@ -244,7 +272,8 @@ textarea{
   font-size: 30px;
 
 }
-.educationGenerator{
+
+.educationGenerator {
   margin: 20px 0px;
   display: flex;
   flex-direction: column;
